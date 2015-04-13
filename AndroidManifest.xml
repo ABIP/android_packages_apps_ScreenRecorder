@@ -16,7 +16,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.chameleonos.screenrecorder"
+          package="com.batik.screenrecorder"
           android:versionCode="1"
           android:versionName="1.0"
           android:sharedUserId="android.uid.system">
@@ -27,15 +27,15 @@
     <uses-permission android:name="android.permission.RECORD_SCREEN"/>
 
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <service android:name="org.chameleonos.screenrecorder.ScreenRecorderService"
+        <service android:name="com.batik.screenrecorder.ScreenRecorderService"
                  android:exported="false"
                  android:permission="android.permission.RECORD_SCREEN"/>
 
         <receiver android:name=".ScreenRecordReceiver"
                   android:permission="android.permission.RECORD_SCREEN">
             <intent-filter>
-                <action android:name="org.chameleonos.action.NOTIFY_RECORD_SERVICE"/>
-                <action android:name="org.chameleonos.action.NOTIFY_DELETE_SCREENRECORD"/>
+                <action android:name="com.batik.action.NOTIFY_RECORD_SERVICE"/>
+                <action android:name="com.batik.action.NOTIFY_DELETE_SCREENRECORD"/>
             </intent-filter>
         </receiver>
     </application>

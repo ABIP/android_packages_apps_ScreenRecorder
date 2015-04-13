@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2013, The ChameleonOS Open Source Project
+ * Copyright (c) 2015, The Android Batik Indonesia Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.chameleonos.screenrecorder;
+package com.batik.screenrecorder;
 
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
@@ -24,10 +24,10 @@ import android.net.Uri;
 
 import java.io.File;
 
-import static org.chameleonos.screenrecorder.ScreenRecorderService.ACTION_NOTIFY_DELETE_SCREENRECORD;
-import static org.chameleonos.screenrecorder.ScreenRecorderService.ACTION_NOTIFY_RECORD_SERVICE;
-import static org.chameleonos.screenrecorder.ScreenRecorderService.NOTIFICATION_ID;
-import static org.chameleonos.screenrecorder.ScreenRecorderService.SCREENRECORD_PATH;
+import static com.batik.screenrecorder.ScreenRecorderService.ACTION_NOTIFY_DELETE_SCREENRECORD;
+import static com.batik.screenrecorder.ScreenRecorderService.ACTION_NOTIFY_RECORD_SERVICE;
+import static com.batik.screenrecorder.ScreenRecorderService.NOTIFICATION_ID;
+import static com.batik.screenrecorder.ScreenRecorderService.SCREENRECORD_PATH;
 
 public class ScreenRecordReceiver extends BroadcastReceiver {
 

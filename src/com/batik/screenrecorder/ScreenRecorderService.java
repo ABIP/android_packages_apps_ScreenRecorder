@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2013, The ChameleonOS Open Source Project
+ * Copyright (c) 2015, The Android Batik Indonesia Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.chameleonos.screenrecorder;
+package com.batik.screenrecorder;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -50,13 +50,13 @@ import dalvik.system.VMRuntime;
 public class ScreenRecorderService extends IntentService
         implements ScreenRecorderCallbacks {
     public static final String ACTION_NOTIFY_RECORD_SERVICE
-            = "org.chameleonos.action.NOTIFY_RECORD_SERVICE";
+            = "com.batik.action.NOTIFY_RECORD_SERVICE";
     public static final String ACTION_NOTIFY_DELETE_SCREENRECORD
-            = "org.chameleonos.action.NOTIFY_DELETE_SCREENRECORD";
+            = "com.batik.action.NOTIFY_DELETE_SCREENRECORD";
     public static final String ACTION_NOTIFY_TOGGLE_SHOW_TOUCHES
-            = "org.chameleonos.action.NOTIFY_TOGGLE_SHOW_TOUCHES";
+            = "com.batik.action.NOTIFY_TOGGLE_SHOW_TOUCHES";
     public static final String SCREENRECORD_PATH
-            = "org.chameleonos.screenrecorder.SCREENRECORD_PATH";
+            = "com.batik.screenrecorder.SCREENRECORD_PATH";
 
     private static final String TAG = "ScreenRecorderService";
     private static final String RECORDER_FOLDER = "ScreenRecorder";
